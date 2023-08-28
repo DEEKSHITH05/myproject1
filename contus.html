@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script>
+      function fun1(){
+           var name = document.getElementById("name").value;
+           var email = document.getElementById("email").value;
+           var Designation = document.getElementById("text").value;
+
+
+           if(name==="" || email===""||Designation==="")
+           {
+            alert("pls fillll..!");
+            return false;
+           }
+           else{
+            alert("form submitted succefully");
+            return true;
+           }
+      }
+    </script>
+</head>
+<body>
+    <h1 style="background-image: url(./Images/10-Ways-To-Cope-Up-With-Online-Classes-scaled.jpg);background-repeat: no-repeat;background-size: cover;">LIVE VIRTUAL CLASS</h1>
+   
+      <div id="list">
+      <ul type="none" style="display:flex; justify-content: space-around;">
+        <li><a href="index.html">Home</a></li>
+        <li> <a href="coureses.html" >Courses</a></li>
+        <li><a href="reg.html">Registration</a></li>
+        <li><a href="gal.html">Gallery</a></li>
+        <li><a href="lvc.html">LVC results</a></li>
+        <li><a href="contus.html">Contact us</a></li>
+      </ul>
+      </div>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.865488996775!2d77.61645620000002!3d13.0442328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1770e1959907%3A0x368dea11d919b8a8!2sEpsilon!5e0!3m2!1sen!2sin!4v1692679483658!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      </div>
+      
+      <div class="ff1">
+        <b>
+        CONTACT US
+        <br>
+        <br>
+        <form name="form1" method="get" onsubmit="return fun1()">
+        Name <input type="name"  id="name" placeholder="name haku">
+        <br>
+        <br>
+        Designation <input type="text" id="text" placeholder="Designation haku" >
+        <br>
+        <br>
+        Email <input type="email" id="email" placeholder="email haku">
+        <br>
+        <br>
+        <input type="submit">
+      </b>
+        </div>
+      

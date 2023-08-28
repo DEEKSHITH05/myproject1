@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <h1 style="background-image: url(./Images/10-Ways-To-Cope-Up-With-Online-Classes-scaled.jpg);background-repeat: no-repeat;background-size: cover;">LIVE VIRTUAL CLASS</h1>
+   
+      <div id="list">
+      <ul type="none" style="display:flex; justify-content: space-around;">
+        <li><a href="index.html">Home</a></li>
+        <li> <a href="coureses.html" >Courses</a></li>
+        <li><a href="reg.html">Registration</a></li>
+        <li><a href="gal.html">Gallery</a></li>
+        <li><a href="lvc.html">LVC results</a></li>
+        <li><a href="contus.html">Contact us</a></li>
+      </ul>
+      </div>
+      <div class="f8">
+      <h2>MCQ Quiz</h2>
+      <form id="quizForm">
+      <h3>Question 1: What is the full form of html?</h3>
+      <label>
+      <input type="radio" name="q1" value="a"> A. Hypertext markup language
+      </label><br>
+      <label>
+      <input type="radio" name="q1" value="b"> B. Hypertest markup language
+      </label><br>
+      <label>
+      <input type="radio" name="q1" value="c"> C. High text making learn
+      </label><br>
+      
+       
+      
+          <h3>Question 2: Which of the following is bigger in size of text?</h3>
+      <label>
+      <input type="radio" name="q2" value="a"> A. h6 tag
+      </label><br>
+      <label>
+      <input type="radio" name="q2" value="b"> B. h1 tag
+      </label><br>
+      <label>
+      <input type="radio" name="q2" value="c"> C. h3 tag
+      </label><br>
+      <br>
+       
+      
+          <input type="button" value="Submit" onclick="calculateScore()">
+      </form>
+      
+       
+      
+      <div id="result"></div>
+      
+       
+      
+      <script>
+          function calculateScore() {
+              const answers = {
+                  q1: "a", // Correct answers
+                  q2: "b"
+              };
+      
+       
+      
+              const form = document.getElementById("quizForm");
+              let score = 0;
+      
+       
+      
+              for (let question in answers) {
+                  const selectedOption = form.elements[question].value;
+                  if (selectedOption === answers[question]) {
+                      score += 2;
+                  }
+              }
+      
+       
+      
+              const resultDiv = document.getElementById("result");
+              resultDiv.innerHTML = "Your score: " + score + " out of 4";
+          }
+      </script>
+      </div>
+        <!-- <footer>
+        <p>&copy; 2019  All rights reserved.</p>
+        </footer> -->
+        </body>
+</html>
+        <!-- </html>
+        USING TABLE WITH FORM :
+        <div style="background-color: skyblue;width:400px">
+        <form name="form1" method="get" action="thanks.html">
+        <table>
+        <tr>
+        <td>Name</td>
+        <td><input type="text" placeholder="Your Name Here" required></td>
+        </tr>
+        <tr>
+        <td>Email</td>
+        <td><input type="email"></td>
+        </tr>
+        <tr>
+        <td>Gender</td>
+        <td>Male<input type="radio" name="r1">  Female <input type="radio" name="r1"></td>
+        </tr>
+        <tr>
+        <td>Courses</td>
+        <td><select>
+        <option> MEAN Stack</option>
+        <option> MEAR Stack</option>
+        <option> MEVN Stack</option>
+        
+        </select></td>
+        </tr>
+        <tr>
+        <td>
+                    Other Course :</td>
+        <td> 
+            Tally     <input type="checkbox" name="chk1">
+            ChatGPT <input type="checkbox" name="chk2">
+            DevOps     <input type="checkbox" name="chk3">
+            Python     <input type="checkbox" name="chk4">
+        </td>
+        </tr>
+        <tr>
+        <td>
+            Remarks :</td>
+        <td> 
+        <textarea rows="4" cols="30"></textarea>
+        </td>
+        </tr>
+        v c
+        <tr>
+        <td>
+        <input type="submit" value="ok">
+        </table>
+          Attach Profile
+        <input type="file">
+          </form>
+        </div> -->

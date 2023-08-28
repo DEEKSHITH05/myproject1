@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shikshana</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="./JS/js1.js"></script>
+    <!-- <script>
+      function mycal(){
+          var mat=parseInt(document.getElementById("m1").value);
+          var sac=parseInt(document.getElementById("s1").value);
+          var eng=parseInt(document.getElementById("e1").value);
+
+          var toth=mat+sac+eng;
+          var maxmarks=300;
+          var per = (toth/maxmarks)*100;
+          // alert(toth)
+          document.getElementById("toth1").innerText=toth;
+          document.getElementById("toth2").innerText=maxmarks;
+          document.getElementById("toth3").innerText=per;
+
+      }
+  </script> -->
+</head>
+<body>
+    <!-- <canvas id="myCanvas" width="200" height="100" style="border:15px solid #d3d3d3;">
+        Your browser does not support the HTML5 canvas tag.</canvas>
+        
+        <script>
+        var c=document.getElementById("myCanvas");
+        var ctx=c.getContext("2d");
+        ctx.font="30px Arial";
+        ctx.strokeText("Hello World",20,90);
+        </script> -->
+    <!-- <h1 style="background-image: url(./Images/10-Ways-To-Cope-Up-With-Online-Classes-scaled.jpg);
+    background-repeat: no-repeat;background-size: cover;"> -->
+     <h1 style="background-image: url(./Images/10-Ways-To-Cope-Up-With-Online-Classes-scaled.jpg);background-repeat: no-repeat;background-size: cover;">LIVE VIRTUAL CLASS</h1>
+    <!-- <canvas id="myCanvas" width="350" height="30" style="border:10px solid #2c2cd27e;">
+        Your browser does not support the HTML5 canvas tag.</canvas>
+        
+        <script>
+        var c=document.getElementById("myCanvas");
+        var ctx=c.getContext("2d");
+        ctx.font="30px Timesroman"
+        ctx.strokeText("LIVE VIRTUAL CLASS",18,30);
+        </script></h1>
+    -->
+      <div id="list">
+      <ul type="none" style="display:flex; justify-content: space-around;">
+        <li><a href="index.html">Home</a></li>
+        <li> <a href="coureses.html" >Courses</a></li>
+        <li><a href="reg.html">Registration</a></li>
+        <li><a href="gal.html">Gallery</a></li>
+        <li><a href="lvc.html">LVC results</a></li>
+        <li><a href="contus.html">Contact us</a></li>
+      </ul>
+      </div>
+      <!-- <div style="background-image: url(./Images/bbbb.jpg);"> -->
+      <div class="res" style="background-image: url(./Images/Employee-Development.png);">
+        <div class="ff5">
+        <h2>STUDENT ACADAMICS RESULTS</h2></div>
+        <br>
+        <form name="myform1" method="get" onsubmit="return mycal()" >
+          <b>
+            NAME <input type="text">
+            
+            <br>
+            <br>
+            MARKS:
+            <br>
+            <br>
+            
+            MATHS <input type="text" id="m1">
+            <br>
+            <br>
+            SOCIAL <input type="text" id="s1">
+            <br><br>
+            ENG <input type="text" id="e1">
+            <br>
+      
+            <br>
+            <h2>RESULTS</h2>
+            
+        
+            <p1>Total Marks: <span id="toth1"></span></p1>
+            <br>
+            <p1>Max Marks: <span id="toth2"></span></p1>
+            <br>
+            <p1>Percentage: <span id="toth3"></span> %</p1>
+            <!-- TOTALMARKS <input type="text" id="tot" onclick="return toth">
+            TOTALPERCENTAGE <input type="text" id="top"> -->
+           
+            <br>
+            <input type="button" value="click here to calculate" onclick="return mycal()">
+    
+          </b>
+        </form>
+    
+      </div>
+    <!-- </div> -->
+    
+</body>
+</html>
